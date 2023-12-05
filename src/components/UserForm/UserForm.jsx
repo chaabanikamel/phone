@@ -10,6 +10,18 @@ const intState = {
   phone: "",
 };
 
+const value ==[{
+   name:"name",
+   type:"text",
+   handleChangeInput:handleChangeInput(),
+   value:form.name
+},{
+
+},{
+
+},{
+
+},]
 const UserForm = ({ addUser }) => {
   const [form, setForm] = useState(intState);
 
@@ -58,8 +70,7 @@ const UserForm = ({ addUser }) => {
           onChange={handleChangeInput}
         />
 
-
-        <label htmlFor="phone">Phone</label>
+<label htmlFor="phone">Phone</label>
         <input
           type="text"
           name="phone"
