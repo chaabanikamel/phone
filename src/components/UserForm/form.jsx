@@ -1,18 +1,18 @@
-import React from 'react'
+// Form.jsx
 
-function form() {
+
+function Form({ name, value, onChange }) {
   return (
     <>
-    
-    <label htmlFor="phone">Phone</label>
-        <input
-          type="text"
-          name="phone"
-          value={form.phone}
-          onChange={handleChangeInput}
-        />
+      <label htmlFor={name}>{name}</label>
+      <input
+        type="text"
+        name={name}
+        value={value}
+        onChange={onChange}
+      />
     </>
-  )
+  );
 }
 
-export default form
+export default Form;
